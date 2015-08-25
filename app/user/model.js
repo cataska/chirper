@@ -10,7 +10,7 @@ var User = DS.Model.extend({
     return this.get('followees').get('length');
   }),
   numberOfFollowers: Ember.computed('followers', function() {
-    return this.get('followers').get('length')
+    return this.get('followers').get('length');
   }),
   aboutMe: DS.attr('string'),
   joinedAt: DS.attr('date'),
